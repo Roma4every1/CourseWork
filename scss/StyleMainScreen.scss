@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Raleway:wght@400;500;700;900&display=swap');
+
+.mainscreen-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 100vh;
+    background-image: url(pictures/MainScreenBg.png);
+    background-position: center;
+    background-size: cover;
+    padding: 0 5%;
+
+    .mainscreen-section-header {
+        display: flex;
+        width: 100%;
+        max-width: 1170px;
+        height: 100px;
+        border-bottom: 1px solid #BABBC5;
+        align-items: center;
+        justify-content: space-between;
+
+        .mainscreen-section-header-menu {
+            display: flex;
+            max-width: 670px;
+            width: 65%;
+            height: 100%;
+            justify-content: space-around;
+
+            div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%/6;
+                height: 100%;
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 13px;
+                line-height: 15px;
+                text-transform: uppercase;
+                color: white;
+
+                &:hover {
+                    height: 98%;
+                    border-bottom: 3px solid #BABBC5;
+                    cursor: pointer;
+                }
+
+                &:active {
+                    color: #E71414;
+                    height: 98%;
+                    border-bottom: 3px solid #E71414;
+                }
+
+            }
+        }
+        .mainscreen-section-header-burger{
+            position: absolute;
+            display: none;
+        }
+    }
+
+    .mainscreen-section-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1170px;
+        height: 90%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: 'Raleway';
+        font-style: normal;
+        color: #FFFFFF;
+
+        .mainscreen-section-content-title {
+            font-weight: 900;
+            font-size: 64px;
+            line-height: 75px;
+            text-transform: uppercase;
+
+        }
+
+        .mainscreen-section-content-caption {
+            margin-top: 31px;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 28px;
+
+        }
+
+        .mainscreen-section-content-button {
+            margin-top: 82px;
+            border: 0;
+            background: #FF4343;
+            width: (369px * 100%)/1510px;
+            min-width: 313px;
+            height: 77.58px;
+            font-weight: 900;
+            font-size: 24px;
+            line-height: 28px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            cursor: pointer;
+
+            &:hover {
+                background: #E71414;
+            }
+
+            &:active {
+                background: #FF4343;
+                box-shadow: 4px 4px 30px #FF4343;
+            }
+        }
+    }
+}
+
+@media (max-width:1024px) { //1024
+    .mainscreen-section {
+        .mainscreen-section-header {
+            max-width: 984px;
+            .mainscreen-section-header-menu {
+                div {
+                    font-size: 12px;
+                    line-height: 14px;
+                }
+            }
+        }
+
+        .mainscreen-section-content {
+            margin-top: 20px;
+            max-width: 984px;
+
+            .mainscreen-section-content-title {
+                font-size: 48px;
+                line-height: 56px;
+            }
+
+            .mainscreen-section-content-caption {
+                margin-top: 50px;
+                font-size: 18px;
+                line-height: 21px;
+
+            }
+
+            .mainscreen-section-content-button {
+                margin-top: 100px;
+                width: (369px * 100%)/1024px;
+                min-width: 279px;
+                font-size: 24px;
+                line-height: 28px;
+
+
+            }
+        }
+    }
+}
+@media (max-width:750px) { //750
+    .mainscreen-section {
+        height: auto;
+        width: 80%;
+        padding: 0 10%;
+        .mainscreen-section-header {
+            max-width: 700px;
+            .mainscreen-section-header-logo img{
+                height: 20px;
+                            }
+            // border-bottom: 0;
+            .mainscreen-section-header-menu {
+                position: absolute;
+                display: none;
+                div {
+                    font-size: 12px;
+                    line-height: 14px;
+                }
+            }
+            .mainscreen-section-header-burger{
+                position: static;
+                display: flex;
+            }
+        }
+
+        .mainscreen-section-content {
+            margin-top: -20px;
+            max-width: 700px;
+            height: 600px;
+
+            .mainscreen-section-content-title {
+                font-size: 42px;
+                line-height: 49px;
+            }
+
+            .mainscreen-section-content-caption {
+                margin-top: 50px;
+                font-size: 16px;
+                line-height: 18px;
+
+            }
+
+            .mainscreen-section-content-button {
+                margin-top: 100px;
+                width: (369px * 100%)/1024px;
+                min-width: 279px;
+                font-size: 24px;
+                line-height: 28px;
+
+
+            }
+        }
+    }
+}
+
+@media (max-width:500px) { //500
+    .mainscreen-section {
+        height: 574px;
+        width: 90%;
+        padding: 0 5%;
+        .mainscreen-section-header {
+            max-width: 400px;
+            height: 70px;
+            .mainscreen-section-header-logo img{
+height: 16px;
+            }
+            // border-bottom: 0;
+            .mainscreen-section-header-menu {
+                position: absolute;
+                display: none;
+                div {
+                    font-size: 12px;
+                    line-height: 14px;
+                }
+            }
+            .mainscreen-section-header-burger{
+                position: static;
+                display: flex;
+            }
+        }
+
+        .mainscreen-section-content {
+            margin-top: 15%;
+            max-width: 350px;
+            height: auto;
+            width: 100%;
+
+            .mainscreen-section-content-title {
+                font-size: 36px;
+                line-height: 42px;
+                
+            }
+
+            .mainscreen-section-content-caption {
+                margin-top: 7%;
+                font-size: 14px;
+                line-height: 16px;
+
+            }
+
+            .mainscreen-section-content-button {
+                margin-top: 15%;
+                width: 100%;
+                height: 58px;
+                min-width: 0px;
+                max-width: 270px;
+                font-size: 24px;
+                line-height: 28px;
+
+
+            }
+        }
+    }
+}

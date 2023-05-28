@@ -1,0 +1,117 @@
+.download-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 224px;
+  align-items: center;
+  margin: 5% 0;
+  font-family: "Raleway";
+  font-style: normal;
+}
+.download-section .download-section-title {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
+  color: #000000;
+  margin-bottom: 25px;
+}
+.download-section .download-section-caption {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 50px;
+}
+.download-section .download-section-button {
+  border: 0;
+  background: #FF4343;
+  width: 25.4482758621%;
+  min-width: 313px;
+  height: 77.58px;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.download-section .download-section-button:hover {
+  background: #E71414;
+}
+.download-section .download-section-button:active {
+  background: #FF4343;
+  box-shadow: 4px 4px 30px #FF4343;
+}
+
+@media (max-width: 1024px) {
+  .download-section {
+    height: 204px;
+  }
+  .download-section .download-section-title {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 25px;
+  }
+  .download-section .download-section-caption {
+    font-size: 14px;
+    line-height: 16.4px;
+    margin-bottom: 50px;
+  }
+  .download-section .download-section-button {
+    width: 36.9%;
+    min-width: 279px;
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+@media (max-width: 750px) {
+  .download-section {
+    height: auto;
+    width: 90%;
+    padding: 0 5%;
+  }
+  .download-section .download-section-title {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  .download-section .download-section-caption {
+    font-size: 14px;
+    line-height: 16.4px;
+    margin-bottom: 50px;
+  }
+  .download-section .download-section-button {
+    width: 61.5%;
+    max-width: 279px;
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+@media (max-width: 500px) {
+  .download-section {
+    margin-top: 40px;
+    height: auto;
+    width: 90%;
+    padding: 0 5%;
+    text-align: center;
+  }
+  .download-section .download-section-title {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 25px;
+  }
+  .download-section .download-section-caption {
+    font-size: 13px;
+    line-height: 15px;
+    margin-bottom: 30px;
+  }
+  .download-section .download-section-button {
+    width: 100%;
+    max-width: 279px;
+    min-width: 0px;
+    font-size: 18px;
+    line-height: 21px;
+  }
+}/*# sourceMappingURL=StyleDownload.css.map */

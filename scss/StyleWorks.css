@@ -1,0 +1,153 @@
+.works-section {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  margin: 5% 0;
+}
+.works-section .works-grid {
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+}
+.works-section .works-grid .works-grid-item {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+.works-section .works-grid .works-grid-item img {
+  max-width: auto;
+  width: 100%;
+  max-height: 338px;
+  height: auto;
+}
+.works-section .works-grid .works-grid-item .works-grid-item-text {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  font-family: "Raleway";
+  font-style: normal;
+  color: #FFFFFF;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 13%;
+}
+.works-section .works-grid .works-grid-item .works-grid-item-text .works-grid-item-title {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+.works-section .works-grid .works-grid-item .works-grid-item-text .works-grid-item-caption {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+.works-section .works-grid .works-grid-item:hover, .works-section .works-grid .works-grid-item:active {
+  cursor: pointer;
+}
+.works-section .works-grid .works-grid-item:hover .works-grid-item-text, .works-section .works-grid .works-grid-item:active .works-grid-item-text {
+  top: 0;
+  height: 99%;
+  width: 100%;
+  position: absolute;
+  font-family: "Raleway";
+  font-style: normal;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 13%;
+  background: rgba(255, 67, 67, 0.8);
+}
+.works-section .works-grid .works-grid-item:hover .works-grid-item-text:active, .works-section .works-grid .works-grid-item:active .works-grid-item-text:active {
+  background: rgba(185, 12, 12, 0.8);
+}
+.works-section .works-grid .works-grid-item:hover .works-grid-item-text .works-grid-item-title, .works-section .works-grid .works-grid-item:active .works-grid-item-text .works-grid-item-title {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+.works-section .works-grid .works-grid-item:hover .works-grid-item-text .works-grid-item-caption, .works-section .works-grid .works-grid-item:active .works-grid-item-text .works-grid-item-caption {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+@media (max-width: 1024px) {
+  .works-section .works-grid .works-grid-item .works-grid-item-text .works-grid-item-title {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .works-section .works-grid .works-grid-item .works-grid-item-text .works-grid-item-caption {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .works-section .works-grid .works-grid-item:hover .works-grid-item-text .works-grid-item-title, .works-section .works-grid .works-grid-item:active .works-grid-item-text .works-grid-item-title {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .works-section .works-grid .works-grid-item:hover .works-grid-item-text .works-grid-item-caption, .works-section .works-grid .works-grid-item:active .works-grid-item-text .works-grid-item-caption {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+@media (max-width: 750px) {
+  .works-section {
+    margin-top: 50px;
+  }
+  .works-section .works-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .works-section .works-grid .works-grid-item .works-grid-item-text .works-grid-item-title {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .works-section .works-grid .works-grid-item .works-grid-item-text .works-grid-item-caption {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .works-section .works-grid .works-grid-item:hover .works-grid-item-text .works-grid-item-title, .works-section .works-grid .works-grid-item:active .works-grid-item-text .works-grid-item-title {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .works-section .works-grid .works-grid-item:hover .works-grid-item-text .works-grid-item-caption, .works-section .works-grid .works-grid-item:active .works-grid-item-text .works-grid-item-caption {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+@media (max-width: 500px) {
+  .works-section .works-grid .works-grid-item .works-grid-item-text {
+    gap: 8%;
+  }
+  .works-section .works-grid .works-grid-item .works-grid-item-text .works-grid-item-title {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .works-section .works-grid .works-grid-item .works-grid-item-text .works-grid-item-caption {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .works-section .works-grid .works-grid-item:hover .works-grid-item-text, .works-section .works-grid .works-grid-item:active .works-grid-item-text {
+    gap: 8%;
+  }
+  .works-section .works-grid .works-grid-item:hover .works-grid-item-text .works-grid-item-title, .works-section .works-grid .works-grid-item:active .works-grid-item-text .works-grid-item-title {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .works-section .works-grid .works-grid-item:hover .works-grid-item-text .works-grid-item-caption, .works-section .works-grid .works-grid-item:active .works-grid-item-text .works-grid-item-caption {
+    font-size: 13px;
+    line-height: 15px;
+  }
+}/*# sourceMappingURL=StyleWorks.css.map */

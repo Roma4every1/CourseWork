@@ -1,0 +1,169 @@
+.ourteam-section {
+  display: flex;
+  width: 96%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2%;
+  margin: 5% 0;
+}
+.ourteam-section .ourteam-cards {
+  display: flex;
+  width: 100%;
+  max-width: 1170px;
+  justify-content: space-between;
+  height: 619px;
+  gap: 20px;
+}
+.ourteam-section .ourteam-cards .ourteam-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  max-width: 270px;
+}
+.ourteam-section .ourteam-cards .ourteam-card .ourteam-card-img img {
+  width: 100%;
+  max-width: 270px;
+}
+.ourteam-section .ourteam-cards .ourteam-card .ourteam-card-text {
+  display: flex;
+  flex-direction: column;
+  font-family: "Raleway";
+  font-style: normal;
+}
+.ourteam-section .ourteam-cards .ourteam-card .ourteam-card-text .ourteam-card-text-name {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #2D3033;
+  text-transform: capitalize;
+  margin-bottom: 3px;
+}
+.ourteam-section .ourteam-cards .ourteam-card .ourteam-card-text .ourteam-card-text-position {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #FF4343;
+  margin-bottom: 15px;
+}
+.ourteam-section .ourteam-cards .ourteam-card .ourteam-card-text .ourteam-card-text-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #6C7279;
+}
+
+@media (max-width: 1024px) {
+  .ourteam-section .ourteam-cards {
+    max-width: 984px;
+    height: 500px;
+    gap: 20px;
+  }
+  .ourteam-section .ourteam-cards .ourteam-card .ourteam-card-text {
+    height: 300px;
+    margin-top: 20px;
+  }
+  .ourteam-section .ourteam-cards .ourteam-card .ourteam-card-text .ourteam-card-text-name {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 7px;
+    margin-top: 0px;
+  }
+  .ourteam-section .ourteam-cards .ourteam-card .ourteam-card-text .ourteam-card-text-position {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 15px;
+  }
+  .ourteam-section .ourteam-cards .ourteam-card .ourteam-card-text .ourteam-card-text-description {
+    font-size: 14px;
+    line-height: 16.4px;
+  }
+  .ourteam-section .ourteam-cards .ourteam-card .ourteam-card-networks img {
+    max-width: 33px;
+  }
+}
+@media (max-width: 750px) {
+  .ourteam-section {
+    margin: 10% 0;
+    width: 90%;
+    padding: 0 5%;
+  }
+  .ourteam-section .ourteam-cards {
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 500px);
+    max-width: 700px;
+    height: auto;
+    gap: 20px;
+    row-gap: 5%;
+  }
+  .ourteam-section .ourteam-cards .ourteam-card .ourteam-card-text {
+    height: 300px;
+    margin-top: 20px;
+  }
+  .ourteam-section .ourteam-cards .ourteam-card .ourteam-card-text .ourteam-card-text-name {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 7px;
+    margin-top: 0px;
+  }
+  .ourteam-section .ourteam-cards .ourteam-card .ourteam-card-text .ourteam-card-text-position {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 15px;
+  }
+  .ourteam-section .ourteam-cards .ourteam-card .ourteam-card-text .ourteam-card-text-description {
+    font-size: 14px;
+    line-height: 16.4px;
+  }
+  .ourteam-section .ourteam-cards .ourteam-card .ourteam-card-networks img {
+    max-width: 33px;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .ourteam-section {
+    margin: 10% 0;
+    width: 90%;
+    padding: 0 5%;
+  }
+  .ourteam-section .ourteam-cards {
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 500px);
+    max-width: 400px;
+    height: auto;
+    gap: 20px;
+    row-gap: 3%;
+  }
+  .ourteam-section .ourteam-cards .ourteam-card {
+    width: 100%;
+  }
+  .ourteam-section .ourteam-cards .ourteam-card .ourteam-card-text {
+    height: 300px;
+    margin-top: 20px;
+  }
+  .ourteam-section .ourteam-cards .ourteam-card .ourteam-card-text .ourteam-card-text-name {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 7px;
+    margin-top: 0px;
+  }
+  .ourteam-section .ourteam-cards .ourteam-card .ourteam-card-text .ourteam-card-text-position {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 15px;
+  }
+  .ourteam-section .ourteam-cards .ourteam-card .ourteam-card-text .ourteam-card-text-description {
+    font-size: 14px;
+    line-height: 16.4px;
+  }
+  .ourteam-section .ourteam-cards .ourteam-card .ourteam-card-networks img {
+    max-width: 33px;
+    margin-top: 20px;
+  }
+}/*# sourceMappingURL=StyleOurTeam.css.map */
